@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简介 </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background-image: url('img/01.jpeg');
+            background-size: cover;
+            background-position: center;
+            font-family: '楷体', 'KaiTi', serif;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #8b4513;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+        }
+
+        .info-card {
+            background: rgba(255,255,255,0.9);
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .contact-item i {
+            width: 30px;
+            color: #8b4513;
+            font-size: 1.2em;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+            margin-left: 10px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 2px;
+            height: 100%;
+            background: #8b4513;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        .timeline-item::before {
+            content: '●';
+            position: absolute;
+            left: -10px;
+            color: #8b4513;
+            font-size: 1.5em;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>刘国森</h1>
+            <h3>河南省南阳市</h3>
+        </div>
+
+        <!-- 基本信息 -->
+        <div class="info-card">
+            <div class="contact-item">
+                <i class="fas fa-venus-mars"></i>
+                <span>性别：男</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-mobile-alt"></i>
+                <span>197-1278-7292</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>gaocisen@qq.com</span>
+            </div>
+            
+        </div>
+
+        <!-- 教育背景 -->
+        <div class="info-card">
+            <h2><i class="fas fa-graduation-cap"></i> 教育背景</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>华北水利水电大学</h3>
+                    <p>软件工程专业 本科(2023-2027)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 工作经历 -->
+        <div class="info-card">
+            <h2><i class="fas fa-briefcase"></i> 工作经历</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <p>[.....]</p>
+                </div>
+                <div class="timeline-item">
+                    <p>[.....]</p>
+                </div>
+                <div class="timeline-item">
+                    <p>[.....]</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 兴趣爱好 -->
+        <div class="info-card">
+            <h2><i class="fas fa-heart"></i> 兴趣爱好</h2>
+            <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                <div class="contact-item">
+                    <i class="fas fa-chess-board"></i>
+                    <span>下中国象棋</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-music"></i>
+                    <span>听音乐</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-gamepad"></i>
+                    <span>玩王者荣耀</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
